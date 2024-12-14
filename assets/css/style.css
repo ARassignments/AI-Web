@@ -48,9 +48,9 @@
   --color-deep-blue: #00001D;
   --color-text-heading: #031811;
   --color-text-body: rgba(3, 24, 17, 0.70); */
-  --primary-black: #ede036;
-  --primary-green: #ede036;
-  --primary-purple: #ede036;
+  --primary-black: #e0ae3a;
+  --primary-green: #e0ae3a;
+  --primary-purple: #e0ae3a;
   --color-light-black: #fafafa;
   --color-white: #FFF;
   --color-light-white: rgba(255, 255, 255, 1.0);
@@ -1629,7 +1629,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   width: 100%;
   opacity: 1;
-  background: linear-gradient(115deg, rgba(255, 255, 255, 0.45) 11.62%, rgba(255, 255, 255, 0) 50.7%, rgba(255, 255, 255, 0.45) 92.88%);
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.65) 11.62%, rgba(255, 255, 255, 0) 50.7%, rgba(255, 255, 255, 0.65) 92.88%);
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
   content: "";
