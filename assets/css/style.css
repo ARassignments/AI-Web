@@ -479,6 +479,7 @@ body::-webkit-scrollbar-thumb {
   transition: .3s;
   -webkit-text-stroke: 1px;
 }
+
 .back-to-top-btn:hover i {
   color: var(--color-text-primary);
 }
@@ -1697,17 +1698,20 @@ body::-webkit-scrollbar-thumb {
   filter: blur(0px);
 }
 
-.service-area .service-box-wrap .service-box h3 svg{
+.service-area .service-box-wrap .service-box h3 svg {
   transition: all 0.3s ease;
 }
-.service-area .service-box-wrap .service-box:not(:hover) h3 svg{
+
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg {
   scale: 1.5;
 }
+
 .service-area .service-box-wrap .service-box:not(:hover) h3 svg path,
 .service-area .service-box-wrap .service-box:not(:hover) h3 svg g,
-.service-area .service-box-wrap .service-box:not(:hover) h3 svg rect{
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg rect {
   fill: #fff !important;
 }
+
 .service-area .service-box-wrap .service-box h3 span {
   display: flex;
   flex-direction: column;
