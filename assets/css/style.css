@@ -1683,20 +1683,31 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   font-weight: bold;
   font-size: 17rem;
-  color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.32);
   line-height: 15rem;
   font-family: var(--ff-inter);
-  filter: blur(3px);
+  filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .service-area .service-box-wrap .service-box:hover::after {
-  color: rgba(254, 177, 24, 0.23);
+  color: rgba(254, 177, 24, 0.28);
   font-size: 18rem;
   line-height: 18rem;
   filter: blur(0px);
 }
 
+.service-area .service-box-wrap .service-box h3 svg{
+  transition: all 0.3s ease;
+}
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg{
+  scale: 1.5;
+}
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg path,
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg g,
+.service-area .service-box-wrap .service-box:not(:hover) h3 svg rect{
+  fill: #fff !important;
+}
 .service-area .service-box-wrap .service-box h3 span {
   display: flex;
   flex-direction: column;
@@ -4979,7 +4990,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   padding: 1px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(33.13%, rgba(255, 255, 255, 0.25)), color-stop(91.05%, var(--color-deep-blue)));
-  background: linear-gradient(180deg, rgba(254, 177, 24, 0.25) 33.13%, var(--color-deep-blue) 91.05%);
+  background: linear-gradient(180deg, rgba(254, 177, 24, 0.95) 33.13%, var(--color-deep-blue) 91.05%);
 }
 
 .team-box-wrap .team-box {
