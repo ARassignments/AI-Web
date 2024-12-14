@@ -48,12 +48,12 @@
   --color-deep-blue: #00001D;
   --color-text-heading: #031811;
   --color-text-body: rgba(3, 24, 17, 0.70); */
-  --primary-black: #FEB318;
-  --primary-green: #FEB318;
-  --primary-purple: #FEB318;
+  --primary-black: #ede036;
+  --primary-green: #ede036;
+  --primary-purple: #ede036;
   --color-light-black: #fafafa;
   --color-white: #FFF;
-  --color-light-white: rgba(255, 255, 255, 0.70);
+  --color-light-white: rgba(255, 255, 255, 1.0);
   --color-blue: #4229FF;
   --color-deep-blue: #ffffff;
   --color-text-heading: #031811;
