@@ -5129,7 +5129,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cs-choose-card-body:hover {
-  background: linear-gradient(44deg, #11192c 65.66%, rgba(17, 25, 44, 0) 99.16%), url(../images/shapes/pattern-masked-2.svg);
+  /* background: linear-gradient(44deg, #11192c 65.66%, rgba(17, 25, 44, 0) 99.16%), url(../images/shapes/pattern-masked-2.svg); */
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
 }
