@@ -316,7 +316,7 @@ $('.select2').select2({
 
 const tableWrapper = document.querySelector(".price_wrapper");
 const switchInputs = document.querySelectorAll(".switch-wrapper input");
-const prices = tableWrapper?.querySelectorAll(".price");
+const prices = tableWrapper?.querySelectorAll(".prices");
 const toggleClass = "hide";
 
 for (const switchInput of switchInputs) {
