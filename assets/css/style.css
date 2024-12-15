@@ -1782,18 +1782,15 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 10px;
 }
 
 .service-box-wrap .service-box .custom-ul li {
   display: flex;
   gap: 0.5rem;
-  color: #777;
-  /* color: #fff; */
+  color: #fff;
 }
 .service-box-wrap .service-box:hover .custom-ul li {
+  color: #777;
 }
 
 .service-box-wrap .service-box .custom-ul li svg {
@@ -1802,11 +1799,11 @@ body::-webkit-scrollbar-thumb {
   max-height: 20px;
   min-height: 20px;
   transform: translateY(5px);
-  color: var(--primary-black);
-  /* color: #fff; */
+  color: #fff;
 }
 
 .service-box-wrap .service-box:hover .custom-ul li svg {
+  color: var(--primary-black);
 }
 
 @media only screen and (max-width: 991.98px) {
