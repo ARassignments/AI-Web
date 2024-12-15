@@ -4417,7 +4417,7 @@ body::-webkit-scrollbar-thumb {
 
 .price-box {
   border-radius: 24px;
-  background: #0C0D25;
+  background: var(--primary-black);
   height: 100%;
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -4467,6 +4467,20 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
 }
 
+
+.price-box .price-info-details.naya li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  margin: 24px 0;
+  font-size: 18px;
+  padding: 0 33px 8px;
+}
 .price-box .price-info-details li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4649,7 +4663,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .price-box.price-box-two {
-  background: #11192C;
+  background: var(--primary-black);
 }
 
 .price-box.price-box-two .price-value-box {
@@ -5168,12 +5182,15 @@ body::-webkit-scrollbar-thumb {
     padding-top: 20px;
   }
 }
-
+.para{
+  font-size: 13px;
+}
 .team-box-wrap .team-box .team-img img {
   -webkit-transition-duration: .8s;
   transition-duration: .8s;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+  height: 400px;
 }
 
 .team-box-wrap .team-box .team-img .team-info-wrap {
