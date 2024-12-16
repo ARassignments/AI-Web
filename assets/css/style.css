@@ -4462,7 +4462,7 @@ body::-webkit-scrollbar-thumb {
 
 .price-box .price-value-box h2 {
   font-size: 48px;
-  margin: 28px 0 2px;
+  /* margin: 28px 0 2px; */
   font-weight: 900;
   -webkit-animation: priceFade .7s alternate linear forwards;
   animation: priceFade .7s alternate linear forwards;
@@ -4507,6 +4507,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
   padding: 0 32px 24px;
   color: #777;
+}
+.price-box .price-info-details li:last-child {
+  border-bottom: none;
 }
 
 .price-box .price-info-details li svg {
