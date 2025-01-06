@@ -1255,7 +1255,7 @@ body::-webkit-scrollbar-thumb {
 
   .mean-container .mean-nav {
     position: relative;
-    margin-top: 48px;
+    margin-top: 74px;
   }
 
   .mean-container .mean-bar {
@@ -1270,7 +1270,7 @@ body::-webkit-scrollbar-thumb {
 
   .mean-container a.meanmenu-reveal {
     right: 12px !important;
-    color: #fff;
+    color: var(--primary-black);
     font-weight: 600;
     border-radius: 50%;
     height: 16px;
@@ -1291,7 +1291,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .mean-container a.meanmenu-reveal span {
-    background: #fff;
+    background: var(--primary-black);
     height: 2px;
     margin-top: 2px;
   }
@@ -1648,7 +1648,8 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
-.service-box-wrap:has(.service-box:hover)::before {
+.service-box-wrap:has(.service-box:hover)::before,
+.service-box-wrap.active::before {
   background: linear-gradient(115deg, rgba(0, 0, 0, 0.55) 11.62%, rgba(255, 255, 255, 0) 50.7%, rgba(0, 0, 0, 0.55) 92.88%);
 }
 
@@ -1674,7 +1675,8 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 
-.service-area .service-box-wrap .service-box:hover {
+.service-area .service-box-wrap .service-box:hover,
+.service-area .service-box-wrap.active .service-box {
   background-color: #fff;
 }
 
@@ -1692,7 +1694,8 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease;
 }
 
-.service-area .service-box-wrap .service-box:hover::after {
+.service-area .service-box-wrap .service-box:hover::after,
+.service-area .service-box-wrap.active .service-box::after {
   color: rgba(254, 177, 24, 0.28);
   font-size: 18rem;
   line-height: 18rem;
@@ -1707,11 +1710,16 @@ body::-webkit-scrollbar-thumb {
   scale: 1.5;
 }
 
-.service-area .service-box-wrap .service-box:not(:hover) h3 svg path,
-.service-area .service-box-wrap .service-box:not(:hover) h3 svg g,
-.service-area .service-box-wrap .service-box:not(:hover) h3 svg rect {
+.service-area .service-box-wrap.active .service-box h3 svg {
+  scale: 1.2;
+}
+
+.service-area .service-box-wrap:not(.active) .service-box:not(:hover) h3 svg path,
+.service-area .service-box-wrap:not(.active) .service-box:not(:hover) h3 svg g,
+.service-area .service-box-wrap:not(.active) .service-box:not(:hover) h3 svg rect {
   fill: #fff !important;
 }
+
 
 .service-area .service-box-wrap .service-box h3 span {
   display: flex;
@@ -1740,13 +1748,15 @@ body::-webkit-scrollbar-thumb {
   transform-origin: center right;
 }
 
-.service-area .service-box-wrap .service-box:hover .date p {
+.service-area .service-box-wrap .service-box:hover .date p,
+.service-area .service-box-wrap.active .service-box .date p {
   background: rgba(255, 255, 255, 1);
   color: var(--primary-black);
   scale: 1.1;
 }
 
-.service-box-wrap .service-box:hover h3 {
+.service-box-wrap .service-box:hover h3,
+.service-box-wrap.active .service-box h3 {
   color: var(--color-text-primary);
   font-weight: 700;
 }
@@ -1775,7 +1785,8 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
-.service-box-wrap .service-box:hover p {
+.service-box-wrap .service-box:hover p,
+.service-box-wrap.active .service-box p {
   color: #777;
 }
 
@@ -1790,7 +1801,9 @@ body::-webkit-scrollbar-thumb {
   gap: 0.5rem;
   color: #fff;
 }
-.service-box-wrap .service-box:hover .custom-ul li {
+
+.service-box-wrap .service-box:hover .custom-ul li,
+.service-box-wrap.active .service-box .custom-ul li {
   color: #777;
 }
 
@@ -1803,7 +1816,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
-.service-box-wrap .service-box:hover .custom-ul li svg {
+.service-box-wrap .service-box:hover .custom-ul li svg,
+.service-box-wrap.active .service-box .custom-ul li svg {
   color: var(--primary-black);
 }
 
@@ -1813,12 +1827,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.service-box-wrap:hover {
+.service-box-wrap:hover,
+.service-box-wrap.active {
   background: linear-gradient(115deg, rgba(255, 255, 255, 0) 11.62%, rgba(255, 255, 255, 0) 50.7%, rgba(255, 255, 255, 0) 92.88%);
 
 }
 
-.service-box-wrap:hover::before {
+.service-box-wrap:hover::before,
+.service-box-wrap.active::before {
   -webkit-animation: animate_border 6.5s linear infinite;
   animation: animate_border 6.5s linear infinite;
   opacity: 1;
@@ -1828,23 +1844,56 @@ body::-webkit-scrollbar-thumb {
   width: 115%;
 }
 
-.guidlineSection .cg-work-box-wrap{
+.guidlineSection .cg-work-box-wrap {
   position: relative;
 }
 
-.guidlineSection .cg-work-box-wrap::before{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(../images/shapes/line.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: invert(1);
-    content: "";
-    z-index: 2;
+.guidlineSection .cg-work-box-wrap::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/shapes/line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: invert(1);
+  content: "";
+  z-index: 2;
+}
+
+.wobble-hor-bottom {
+  animation: wobble-hor-bottom 3.2s ease-in-out infinite both;
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  6% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  12% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  18% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  24% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  30% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  36% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  42% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%); /* Hold the position for 3s */
+  }
 }
 
 /*================================================
@@ -1919,19 +1968,23 @@ body::-webkit-scrollbar-thumb {
   gap: 0.5rem;
   padding: 10px;
 }
+
 .custom-ul-2 {
   color: white;
 }
+
 .custom-ul-2 li {
   list-style: none;
   /* margin-left: 20px; */
 }
+
 .industries-box .industries-info .custom-ul li {
   display: flex;
   gap: 0.5rem;
   font-size: 0.9rem;
   color: #777;
 }
+
 .industries-box .industries-info .custom-ul li svg {
   max-width: 20px;
   min-width: 20px;
@@ -4443,7 +4496,7 @@ body::-webkit-scrollbar-thumb {
 
 .price-box .price-value-box {
   border-radius: 24px;
-  background:var(--primary-black);
+  background: var(--primary-black);
   padding: 48px 20px;
 }
 
@@ -4494,6 +4547,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
   padding: 0 33px 8px;
 }
+
 .price-box .price-info-details li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4508,6 +4562,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0 32px 24px;
   color: #777;
 }
+
 .price-box .price-info-details li:last-child {
   border-bottom: none;
 }
@@ -5204,9 +5259,11 @@ body::-webkit-scrollbar-thumb {
     padding-top: 20px;
   }
 }
-.para{
+
+.para {
   font-size: 13px;
 }
+
 .team-box-wrap .team-box .team-img img {
   -webkit-transition-duration: .8s;
   transition-duration: .8s;
@@ -5592,6 +5649,7 @@ body::-webkit-scrollbar-thumb {
 .cg-work-box-wrap .cg-work-box .cg-work-info {
   /* max-width: 499px; */
   width: 100%;
+
   @media only screen and (min-width: 991.98px) {
     min-height: 80vh;
   }
