@@ -81,6 +81,17 @@ a.meanmenu-reveal {
 	text-transform: uppercase
 }
 
+.mean-container .mean-nav ul li a .badge {
+	position: relative;
+	top: -12px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	display: inline-block;
+	font-size: 0.6rem;
+	color: var(--primary-black);
+	background-color: var(--color-white);
+}
+
 .mean-container .mean-nav ul li li a {
 	width: 80%;
 	padding: 1em 10%;
