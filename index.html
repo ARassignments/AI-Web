@@ -152,7 +152,6 @@
 		</header>
 
 		<!-- Hero -->
-
 		<div class="hero-area hero-area-canvas breadcrumb-area minus-margin overflow-hidden position-relative z-index-one"
 			id="home">
 			<div class="container position-relative z-index-one">
@@ -3444,7 +3443,9 @@
 		if (comingSoonModalElement) {
 			// Initialize and show the modal
 			var comingSoonModal = new bootstrap.Modal(comingSoonModalElement);
-			comingSoonModal.show();
+			setTimeout(()=>{
+				comingSoonModal.show();
+			},3000);
 		}
 	});
 </script>
