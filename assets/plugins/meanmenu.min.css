@@ -91,6 +91,9 @@ a.meanmenu-reveal {
 	color: var(--primary-black);
 	background-color: var(--color-white);
 }
+.mean-container .mean-nav ul li a canvas {
+	display: none;
+}
 
 .mean-container .mean-nav ul li li a {
 	width: 80%;
